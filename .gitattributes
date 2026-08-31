@@ -1,0 +1,17 @@
+# Normalize all text files to LF inside the repository
+* text=auto eol=lf
+
+# Windows-only batch scripts must keep CRLF or they break
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files - never touch line endings
+*.png  binary
+*.jpg  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
+*.sqlite binary
+
+# Collapse lockfile noise in pull request diffs
+pnpm-lock.yaml linguist-generated=true
