@@ -45,3 +45,5 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 .DS_Store
+# ---------- archived design work ----------
+docs/_archive-*/
